@@ -1,5 +1,8 @@
 name: Promote member to team maintainer
 description: Promote GitHub member to team maintainer
+branding:
+  icon: 'corner-right-up'
+  color: 'orange'
 inputs:
   user:
     description: 'GitHub User Name'
