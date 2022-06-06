@@ -14,4 +14,4 @@ See [action.yaml](action.yaml).
 
 ## Example
 
-See [example.yaml](example.yaml).
+See [test repository](https://github.com/chaspy/test-github-action-promote-member-to-team-maintainer/blob/main/.github/workflows/promote-member-to-team-maintainer.yaml).
