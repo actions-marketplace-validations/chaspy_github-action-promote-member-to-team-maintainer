@@ -11,4 +11,3 @@ gh api \
   -H "Accept: application/vnd.github.v3+json" \
   "/orgs/${ORG}/teams/${TEAM}/memberships/${USER}" \
   -f role='maintainer'
-
