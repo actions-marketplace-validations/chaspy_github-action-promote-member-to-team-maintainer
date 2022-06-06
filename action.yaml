@@ -13,7 +13,7 @@ inputs:
 runs:
   using: composite
   steps:
-    - run: bash ./main.sh ${{ inputs.user}} ${{ inputs.team }}
+    - run: bash ${{ github.action_path }}/main.sh ${{ inputs.user}} ${{ inputs.team }}
       shell: bash
       env:
         GITHUB_TOKEN: ${{ inputs.github_token }}
