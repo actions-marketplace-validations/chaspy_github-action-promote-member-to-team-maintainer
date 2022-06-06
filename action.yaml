@@ -1,0 +1,19 @@
+name: Promote member to team maintainer
+description: Promote GitHub member to team maintainer
+inputs:
+  user:
+    description: 'GitHub User Name'
+    required: true
+  team:
+    description: 'GitHub Team Name'
+    required: true
+  github_token:
+    description: 'GitHub Access Token'
+    required: true
+runs:
+  using: composite
+  steps:
+    - run: bash ./main.sh ${{ inputs.user}} ${{ inputs.team }}
+      shell: bash
+      env:
+        GITHUB_TOKEN: ${{ inputs.github_token }}
